@@ -49,7 +49,7 @@ defineProps({
         </div>
       </div>
     </div>
-    <div class="work-group__description">{{ description }}</div>
+    <p class="work-group__description">{{ description }}</p>
   </div>
 </template>
 <style scoped lang="scss">
@@ -72,10 +72,6 @@ defineProps({
     &__location {
       margin-bottom: 0.5rem;
     }
-  }
-
-  &__description {
-    line-height: 2rem;
   }
 }
 </style>

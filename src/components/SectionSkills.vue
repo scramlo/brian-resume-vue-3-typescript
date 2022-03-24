@@ -11,7 +11,7 @@ import SkillLine from "@/components/blocks/SkillLine.vue";
       <SkillLine :level="90" skill="Speaking / Writing" />
       <SkillLine :level="60" skill="Jira / Ticketing" />
       <SkillLine :level="80" skill="Motion Graphics / 3D / Video" />
-      <SkillLine :level="96" skill="Legend of Zelda" />
+      <SkillLine :level="94" skill="Legend of Zelda" />
     </div>
   </section>
 </template>
