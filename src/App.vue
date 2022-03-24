@@ -6,6 +6,7 @@ import SectionSkills from "./components/SectionSkills.vue";
 import SectionEducation from "./components/SectionEducation.vue";
 import SectionWork from "./components/SectionWork.vue";
 import SectionSlotted from "./components/SectionSlotted.vue";
+import ControlButton from "./components/blocks/ControlButton.vue";
 </script>
 <template>
   <div class="layout">
@@ -77,58 +78,62 @@ import SectionSlotted from "./components/SectionSlotted.vue";
         <SectionWork />
       </section>
     </main>
+    <ControlButton />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.layout {
+  position: relative;
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 
-  &__start,
-  &__end {
-    padding: 1rem;
+    &__start,
+    &__end {
+      padding: 1rem;
 
-    section {
-      padding: 0 0.75rem 0.75rem 0.75rem;
-      transition: 0.25s ease-in-out;
+      section {
+        padding: 0 0.75rem 0.75rem 0.75rem;
+        transition: 0.25s ease-in-out;
 
-      // Hover Effects
-      // &:hover {
-      //   background-color: var(--brian-dark);
-      //   color: var(--brian-light);
-      //   padding: 1rem;
-      //   margin: -1rem;
+        // Hover Effects
+        // &:hover {
+        //   background-color: var(--brian-dark);
+        //   color: var(--brian-light);
+        //   padding: 1rem;
+        //   margin: -1rem;
 
-      //   ::v-deep .section-title,
-      //   ::v-deep .expertise__list-content {
-      //     border-color: var(--brian-light);
-      //   }
+        //   ::v-deep .section-title,
+        //   ::v-deep .expertise__list-content {
+        //     border-color: var(--brian-light);
+        //   }
 
-      //   ::v-deep .skill-line > svg {
-      //     rect:first-child {
-      //       stroke: white !important;
-      //     }
-      //     rect:last-child {
-      //       fill: var(--brian-accent) !important;
-      //     }
-      //   }
-      // }
-    }
-  }
-
-  .slotted-section {
-    p {
-      text-indent: 2rem;
-
-      &:not(:first-of-type):not(:last-of-type) {
-        margin: 1rem 0;
+        //   ::v-deep .skill-line > svg {
+        //     rect:first-child {
+        //       stroke: white !important;
+        //     }
+        //     rect:last-child {
+        //       fill: var(--brian-accent) !important;
+        //     }
+        //   }
+        // }
       }
     }
-  }
 
-  &__start {
-    background-color: var(--brian-accent);
+    .slotted-section {
+      p {
+        text-indent: 2rem;
+
+        &:not(:first-of-type):not(:last-of-type) {
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    &__start {
+      background-color: var(--brian-accent);
+    }
   }
 }
 </style>
