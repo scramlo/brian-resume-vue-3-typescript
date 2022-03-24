@@ -32,7 +32,8 @@ defineProps({
 </template>
 <style scoped lang="scss">
 .education-group {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   &__degree {
     font-weight: bold;

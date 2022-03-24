@@ -8,7 +8,10 @@ defineProps({
 });
 </script>
 <template>
-  <h2 class="section-title">{{ title }}</h2>
+  <h2 class="section-title">
+    {{ title }}
+    <slot name="title"></slot>
+  </h2>
 </template>
 
 <style scoped lang="scss">
