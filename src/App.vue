@@ -4,6 +4,7 @@ import SectionContact from "./components/SectionContact.vue";
 import SectionExpertise from "./components/SectionExpertise.vue";
 import SectionSkills from "./components/SectionSkills.vue";
 import SectionEducation from "./components/SectionEducation.vue";
+import SectionWork from "./components/SectionWork.vue";
 </script>
 <template>
   <div class="layout">
@@ -16,6 +17,7 @@ import SectionEducation from "./components/SectionEducation.vue";
       </section>
       <section class="main__end">
         <SectionEducation />
+        <SectionWork />
       </section>
     </main>
   </div>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import SectionTitle from "@/components/SectionTitle.vue";
+import SectionTitle from "@/components/blocks/SectionTitle.vue";
 </script>
 
 <template>
@@ -35,11 +35,10 @@ import SectionTitle from "@/components/SectionTitle.vue";
             ><strong>Ruby on Rails:</strong> Model Generation, Templating,
             Controller Logic</span
           >
-          <span> <strong>React</strong> Hooks, Next.js and Serverless </span>
-          <span
-            ><strong>Web Components:</strong> Custom Class-Based Web
-            Components</span
-          >
+          <span>
+            <strong>JS Frameworks / Tools:</strong> React, Web Components,
+            Angular, Ionic, Cordova
+          </span>
         </div>
       </div>
     </div>

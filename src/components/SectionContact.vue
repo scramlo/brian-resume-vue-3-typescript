@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import SectionTitle from "@/components/SectionTitle.vue";
-import InfoGroup from "@/components/InfoGroup.vue";
+import SectionTitle from "@/components/blocks/SectionTitle.vue";
+import InfoGroup from "@/components/blocks/InfoGroup.vue";
 import { CIcon } from "@coreui/icons-vue";
 import { cilPhone, cilEnvelopeLetter, cilHouse } from "@coreui/icons";
-import SvgLine from "@/components/SvgLine.vue";
+import SvgLine from "@/components/ui/SvgLine.vue";
 </script>
 <template>
   <section class="contact">

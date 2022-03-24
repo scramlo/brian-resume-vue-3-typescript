@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SvgLine from "@/components/SvgLine.vue";
+import SvgLine from "@/components/ui/SvgLine.vue";
 // const profileImgSrcLqip = `https://res.cloudinary.com/nerd-specs-creative/image/upload/c_fill,dpr_auto,e_blur:100,f_auto,g_north,h_500,q_auto:low/v1648082776/headshotsscramlin-77_dpkljh.jpg`;
 const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/upload/c_fill,dpr_auto,f_auto,g_center,h_1000,q_auto,w_667/v1648082776/headshotsscramlin-77_dpkljh.jpg`;
 </script>

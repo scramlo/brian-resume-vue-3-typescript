@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import SectionTitle from "@/components/SectionTitle.vue";
-import SkillLine from "@/components/SkillLine.vue";
+import SectionTitle from "@/components/blocks/SectionTitle.vue";
+import SkillLine from "@/components/blocks/SkillLine.vue";
 </script>
 
 <template>
