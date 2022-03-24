@@ -23,8 +23,9 @@ const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/uplo
     </section>
     <section class="header__description-wrapper">
       <p class="description">
-        “Don't ask what the world needs. Ask what makes you come alive… Because
-        what the world needs is people who have come alive.” -Howard Thurman
+        “Don't ask what the world needs. Ask what makes you
+        <span>come alive</span>… Because what the world needs is people who have
+        <span>come alive</span>.” -Howard Thurman
       </p>
     </section>
   </header>
@@ -68,6 +69,10 @@ const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/uplo
     .description {
       font-size: 1.5rem;
       line-height: 1.5;
+
+      span {
+        color: var(--brian-accent);
+      }
     }
   }
 }

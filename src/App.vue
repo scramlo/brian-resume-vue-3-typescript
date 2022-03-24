@@ -85,8 +85,29 @@ import SectionSlotted from "./components/SectionSlotted.vue";
   display: grid;
   grid-template-columns: 1fr 2fr;
 
-  section {
-    padding: 0 0.75rem 0.75rem 0.75rem;
+  &__start,
+  &__end {
+    padding: 1rem;
+
+    section {
+      padding: 0 0.75rem 0.75rem 0.75rem;
+      transition: 0.25s ease-in-out;
+
+      &:hover {
+        background-color: var(--brian-dark);
+        color: var(--brian-light);
+        padding: 1rem;
+
+        ::v-deep .section-title,
+        ::v-deep .expertise__list-content {
+          border-color: var(--brian-light);
+        }
+
+        ::v-deep .skill-line > svg rect:last-child {
+          fill: var(--brian-accent) !important;
+        }
+      }
+    }
   }
 
   .slotted-section {
