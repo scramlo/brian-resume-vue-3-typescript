@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import TheHeader from "./components/TheHeader.vue";
 import SectionContact from "./components/SectionContact.vue";
+import SectionExpertise from "./components/SectionExpertise.vue";
+import SectionSkills from "./components/SectionSkills.vue";
+import SectionEducation from "./components/SectionEducation.vue";
 </script>
 <template>
   <div class="layout">
@@ -8,8 +11,12 @@ import SectionContact from "./components/SectionContact.vue";
     <main class="main">
       <section class="main__start">
         <SectionContact />
+        <SectionExpertise />
+        <SectionSkills />
       </section>
-      <section class="main__end"></section>
+      <section class="main__end">
+        <SectionEducation />
+      </section>
     </main>
   </div>
 </template>
@@ -19,9 +26,12 @@ import SectionContact from "./components/SectionContact.vue";
   display: grid;
   grid-template-columns: 1fr 2fr;
 
+  section {
+    padding: 0.75rem;
+  }
+
   &__start {
     background-color: var(--brian-accent);
-    padding: 1.5rem;
   }
 }
 </style>

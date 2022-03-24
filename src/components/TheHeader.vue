@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import SvgLine from "@/components/SvgLine.vue";
 // const profileImgSrcLqip = `https://res.cloudinary.com/nerd-specs-creative/image/upload/c_fill,dpr_auto,e_blur:100,f_auto,g_north,h_500,q_auto:low/v1648082776/headshotsscramlin-77_dpkljh.jpg`;
-const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/upload/c_scale,dpr_auto,f_auto,h_1000,q_auto/v1648082776/headshotsscramlin-77_dpkljh.jpg`;
+const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/upload/c_fill,dpr_auto,f_auto,g_center,h_1000,q_auto,w_667/v1648082776/headshotsscramlin-77_dpkljh.jpg`;
 </script>
 
 <template>
@@ -18,7 +18,7 @@ const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/uplo
         :src="profileImgSrc"
         alt="Brian Scramlin"
         height="500"
-        width="400"
+        width="333.5"
       />
     </section>
     <section class="header__description-wrapper">
@@ -35,7 +35,6 @@ const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/uplo
   background-color: var(--brian-dark);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  overflow: hidden;
   color: var(--brian-light);
 
   &__title-wrapper {
@@ -57,10 +56,8 @@ const profileImgSrc = `https://res.cloudinary.com/nerd-specs-creative/image/uplo
   }
 
   &__profile-image-wrapper {
-    .profile-image {
-      max-width: 100%;
-      height: auto;
-    }
+    display: flex;
+    justify-content: center;
   }
 
   &__description-wrapper {
