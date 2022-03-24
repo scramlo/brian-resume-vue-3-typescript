@@ -93,20 +93,27 @@ import SectionSlotted from "./components/SectionSlotted.vue";
       padding: 0 0.75rem 0.75rem 0.75rem;
       transition: 0.25s ease-in-out;
 
-      &:hover {
-        background-color: var(--brian-dark);
-        color: var(--brian-light);
-        padding: 1rem;
+      // Hover Effects
+      // &:hover {
+      //   background-color: var(--brian-dark);
+      //   color: var(--brian-light);
+      //   padding: 1rem;
+      //   margin: -1rem;
 
-        ::v-deep .section-title,
-        ::v-deep .expertise__list-content {
-          border-color: var(--brian-light);
-        }
+      //   ::v-deep .section-title,
+      //   ::v-deep .expertise__list-content {
+      //     border-color: var(--brian-light);
+      //   }
 
-        ::v-deep .skill-line > svg rect:last-child {
-          fill: var(--brian-accent) !important;
-        }
-      }
+      //   ::v-deep .skill-line > svg {
+      //     rect:first-child {
+      //       stroke: white !important;
+      //     }
+      //     rect:last-child {
+      //       fill: var(--brian-accent) !important;
+      //     }
+      //   }
+      // }
     }
   }
 
