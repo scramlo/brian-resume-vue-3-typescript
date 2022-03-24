@@ -1,0 +1,13 @@
+@use "../base";
+@use "./resets";
+
+:root {
+    --brian-dark: #{base.$dark};
+    --brian-light: #{base.$light};
+    --brian-accent: #{base.$accent};
+
+    background-color: var(--brian-light);
+    color: var(--brian-dark);
+    
+    font-family: Arial, sans-serif;
+}

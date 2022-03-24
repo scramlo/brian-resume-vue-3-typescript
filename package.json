@@ -12,6 +12,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@coreui/icons": "^2.1.0",
+    "@coreui/icons-vue": "^2.0.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
     "vue": "^3.2.31"
   },
   "devDependencies": {
