@@ -1,0 +1,27 @@
+@use "../base";
+@use "./resets";
+
+:root {
+    --brian-dark: #{base.$dark};
+    --brian-light: #{base.$light};
+    --brian-accent: #{base.$accent};
+
+    background-color: var(--brian-light);
+    color: var(--brian-dark);
+    
+    font-family: Arial, sans-serif;
+}
+
+p {
+    line-height: 2rem;
+}
+
+@media print {
+    #app {
+        width: 1200px;
+
+        * {
+            text-shadow: none;
+        }
+    }
+ }
